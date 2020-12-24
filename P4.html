@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<title>40811240</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<style>
+body {font-family: "Times New Roman", Georgia, Serif;}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display";
+  letter-spacing: 5px;
+}
+	img{
+    display: block;
+  margin: 0 auto;
+}
+	showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
+}
+	
+</style>
+<body>
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
+    <a href="index.html" class="fas fa-house-user" style='font-size:36px'></a>
+    <!-- Right-sided navbar links. Hide them on small screens -->
+<div class="w3-right w3-hide-small">
+    <a href="P1.html" class="w3-bar-item w3-button">自我介紹</a> 
+	<a href="P3.html" class="w3-bar-item w3-button">活動照片</a> 
+	<a href="P4.html" class="w3-bar-item w3-button">工作經歷</a> 
+	<a href="P5.html" class="w3-bar-item w3-button">社群軟體</a> </div>
+  </div>
+</div>
+
+<!-- Header -->
+	<div class="w3-row w3-padding-64" id="participate">
+      <h1 class="w3-center"><strong>工作經歷<br>
+	</div>
+	<div class="w3-row-padding w3-margin-top w3-auto">
+<div class="w3-third">
+    <div class="w3-card">
+      <img src="img/02.jpg" style="width:100%">
+      <div class="w3-container">
+        <h5>湯姆熊歡樂世界</h5>
+        <P>工作時間:1年(目前就職中)
+        <br>雖然都被一些小孩叫阿姨，但是想到餐飲業的痛苦一次就釋懷了哈哈哈!</br></p>
+      </div>
+    </div>
+  </div>
+  <div class="w3-third">
+    <div class="w3-card">
+      <img src="img/01.jpg" style="width:100%">
+      <div class="w3-container">
+        <h5>早餐店</h5>
+        <p>工作時間:3年(高一至高三)<br>
+早餐店真的超累，真不知道我是怎麼渡過的。</br></p>
+      </div>
+
+  </div>
+</div>
+
+</body>
+</html>
